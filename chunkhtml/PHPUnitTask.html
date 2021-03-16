@@ -1,17 +1,17 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>C.75 PHPUnitTask</title><link rel="stylesheet" type="text/css" href="book.css"><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Phing User Guide"><link rel="up" href="app.optionaltasks.html" title="Appendix C. Optional tasks"><link rel="prev" href="PhpLintTask.html" title="C.74 PhpLintTask"><link rel="next" href="PHPUnitReport.html" title="C.76 PHPUnitReport"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">C.75 PHPUnitTask</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="PhpLintTask.html">Prev</a> </td><th width="60%" align="center">Appendix C. Optional tasks</th><td width="20%" align="right"> <a accesskey="n" href="PHPUnitReport.html">Next</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="PHPUnitTask"></a>C.75 PHPUnitTask</h2></div></div></div>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>C.68 PHPUnitTask</title><link rel="stylesheet" type="text/css" href="book.css"><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Phing User Guide"><link rel="up" href="app.optionaltasks.html" title="Appendix C. Optional tasks"><link rel="prev" href="PHPStanTask.html" title="C.67 PHPStanTask"><link rel="next" href="PHPUnitReport.html" title="C.69 PHPUnitReport"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">C.68 PHPUnitTask</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="PHPStanTask.html">Prev</a> </td><th width="60%" align="center">Appendix C. Optional tasks</th><td width="20%" align="right"> <a accesskey="n" href="PHPUnitReport.html">Next</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="PHPUnitTask"></a>C.68 PHPUnitTask</h2></div></div></div>
         
         <p> This task runs testcases using the <a class="ulink" href="http://www.phpunit.de/" target="_top">PHPUnit</a> framework. It is a functional port of the Ant <a class="ulink" href="http://ant.apache.org/manual/OptionalTasks/junit.html" target="_top">JUnit</a> task.</p>
         <p>
             <span class="bold"><strong>NB:</strong></span> if you want to use the PHPUnit .phar file, please make sure you download the library version (<code class="literal">phpunit-library.phar</code>)
             and you set the <code class="literal">pharlocation</code> attribute!</p>
-        <div class="table"><a name="idm46025656183904"></a><p class="formal-object-title"><span class="label">Table C.92: </span><span class="title">Attributes</span></p><div class="table-contents">
+        <div class="table"><a name="idp15627"></a><p class="formal-object-title"><span class="label">Table C.90: </span><span class="title">Attributes</span></p><div class="table-contents">
             
             <table class="table" summary="Attributes" border="1"><colgroup><col class="name"><col class="type"><col class="description"><col class="default"><col class="required"></colgroup><thead><tr><th>Name</th><th>Type</th><th>Description</th><th>Default</th><th>Required</th></tr></thead><tbody><tr><td><code class="literal">printsummary</code></td><td><code class="literal">Boolean</code></td><td>Print one-line statistics for each testcase.</td><td><code class="literal">false</code></td><td>No</td></tr><tr><td><code class="literal">bootstrap</code></td><td><code class="literal">String</code></td><td>The name of a bootstrap file that is run before executing the
                             tests.</td><td>none</td><td>No</td></tr><tr><td><code class="literal">codecoverage</code></td><td><code class="literal">Boolean</code></td><td>Gather code coverage information while running tests (requires
                             Xdebug).</td><td><code class="literal">false</code></td><td>No</td></tr><tr><td><code class="literal">haltonerror</code></td><td><code class="literal">Boolean</code></td><td>Stop the build process if an error occurs during the test
                             run.</td><td><code class="literal">false</code></td><td>No</td></tr><tr><td><code class="literal">haltonfailure</code></td><td><code class="literal">Boolean</code></td><td>Stop the build process if a test fails (errors are considered
-                            failures as well).</td><td><code class="literal">false</code></td><td>No</td></tr><tr><td><code class="literal">haltonincomplete</code></td><td><code class="literal">Boolean</code></td><td>Stop the build process if any incomplete tests are
-                            encountered.</td><td><code class="literal">false</code></td><td>No</td></tr><tr><td><code class="literal">haltonskipped</code></td><td><code class="literal">Boolean</code></td><td>Stop the build process if any skipped tests are encountered.</td><td><code class="literal">false</code></td><td>No</td></tr><tr><td><code class="literal">failureproperty</code></td><td><code class="literal">String</code></td><td>Name of property to set (to true) on failure.</td><td>n/a</td><td>No</td></tr><tr><td><code class="literal">errorproperty</code></td><td><code class="literal">String</code></td><td>Name of property to set (to true) on error.</td><td>n/a</td><td>No</td></tr><tr><td><code class="literal">incompleteproperty</code></td><td><code class="literal">String</code></td><td>Name of property to set (to true) on incomplete tests.</td><td>n/a</td><td>No</td></tr><tr><td><code class="literal">skippedproperty</code></td><td><code class="literal">String</code></td><td>Name of property to set (to true) on skipped tests.</td><td>n/a</td><td>No</td></tr><tr><td><code class="literal">usecustomerrorhandler</code></td><td><code class="literal">Boolean</code></td><td>Use a custom Phing/PHPUnit error handler to process PHP
+                            failures as well).</td><td><code class="literal">false</code></td><td>No</td></tr><tr><td><code class="literal">haltondefect</code></td><td><code class="literal">Boolean</code></td><td>Stop the build process if a test has failures, errors or warnings.</td><td><code class="literal">false</code></td><td>No</td></tr><tr><td><code class="literal">haltonincomplete</code></td><td><code class="literal">Boolean</code></td><td>Stop the build process if any incomplete tests are
+                            encountered.</td><td><code class="literal">false</code></td><td>No</td></tr><tr><td><code class="literal">haltonskipped</code></td><td><code class="literal">Boolean</code></td><td>Stop the build process if any skipped tests are encountered.</td><td><code class="literal">false</code></td><td>No</td></tr><tr><td><code class="literal">haltonwarning</code></td><td><code class="literal">Boolean</code></td><td>Stop the build process if any warnings are encountered.</td><td><code class="literal">false</code></td><td>No</td></tr><tr><td><code class="literal">haltonrisky</code></td><td><code class="literal">Boolean</code></td><td>Stop the build process if any risky tests are encountered.</td><td><code class="literal">false</code></td><td>No</td></tr><tr><td><code class="literal">failureproperty</code></td><td><code class="literal">String</code></td><td>Name of property to set (to true) on failure.</td><td>n/a</td><td>No</td></tr><tr><td><code class="literal">errorproperty</code></td><td><code class="literal">String</code></td><td>Name of property to set (to true) on error.</td><td>n/a</td><td>No</td></tr><tr><td><code class="literal">incompleteproperty</code></td><td><code class="literal">String</code></td><td>Name of property to set (to true) on incomplete tests.</td><td>n/a</td><td>No</td></tr><tr><td><code class="literal">skippedproperty</code></td><td><code class="literal">String</code></td><td>Name of property to set (to true) on skipped tests.</td><td>n/a</td><td>No</td></tr><tr><td><code class="literal">warningproperty</code></td><td><code class="literal">String</code></td><td>Name of property to set (to true) on warnings.</td><td>n/a</td><td>No</td></tr><tr><td><code class="literal">riskyproperty</code></td><td><code class="literal">String</code></td><td>Name of property to set (to true) on risky tests.</td><td>n/a</td><td>No</td></tr><tr><td><code class="literal">usecustomerrorhandler</code></td><td><code class="literal">Boolean</code></td><td>Use a custom Phing/PHPUnit error handler to process PHP
                             errors.</td><td><code class="literal">true</code></td><td>No</td></tr><tr><td><code class="literal">processisolation</code></td><td><code class="literal">Boolean</code></td><td>Enable process isolation when executing tests.</td><td><code class="literal">false</code></td><td>No</td></tr><tr><td><code class="literal">configuration</code></td><td><code class="literal">String</code></td><td>Path to a PHPUnit configuration file (such as
                         <code class="literal">phpunit.xml</code>). Supported elements are:
                         <code class="literal">bootstrap</code>,
@@ -22,7 +22,7 @@
                         <code class="literal">stopOnSkipped</code>. Values provided
                         <span class="bold"><strong>overwrite</strong></span> other attributes!</td><td>n/a</td><td>No</td></tr><tr><td><code class="literal">groups</code></td><td><code class="literal">String</code></td><td>Only run tests from the specified group(s).</td><td>n/a</td><td>No</td></tr><tr><td><code class="literal">excludeGroups</code></td><td><code class="literal">String</code></td><td>Exclude tests from the specified group(s).</td><td>n/a</td><td>No</td></tr><tr><td><code class="literal">pharlocation</code></td><td><code class="literal">String</code></td><td>Location of the PHPUnit PHAR package.</td><td>n/a</td><td>No</td></tr></tbody></table>
         </div></div><br class="table-break">
-        <div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="idm46025656111616"></a>C.75.1 Supported Nested Tags</h3></div></div></div>
+        <div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="idp15838"></a>C.68.1 Supported Nested Tags</h3></div></div></div>
             
             <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
                     <p><code class="literal">formatter</code>
@@ -32,21 +32,25 @@
                         attribute to <code class="literal">false</code>. The name of the file is predetermined
                         by the formatter and can be changed by the <code class="literal">outfile</code>
                         attribute.</p>
-                    <p>There are four predefined formatters - <code class="literal">xml</code>,
-                            <code class="literal">clover</code>, and <code class="literal">crap4j</code> print the test
-                        results in the JUnit, Clover, and Crap4J
-                        XML formats respectively. The <code class="literal">plain</code> formatter emits a short
-                        statistics line for all test cases. Custom formatters that implement
-                        phing.tasks.ext.phpunit.formatter.PHPUnitResultFormatter can be
+                    <p>There are six predefined formatters. <code class="literal">xml</code>,
+                        <code class="literal">clover</code>, and <code class="literal">crap4j</code> print the test
+                        results in the JUnit, Clover, and Crap4J XML formats respectively.
+                        The <code class="literal">clover-html</code> formatter prints code coverage details
+                        to a set of HTML files.
+                        The <code class="literal">plain</code> formatter emits a short
+                        statistics line for all test cases.
+                        The <code class="literal">summary</code> formatter print the same statistics as the
+                        plain formatter but only to the log output.
+                        Custom formatters that implement
+                        <code class="literal">Phing\Task\Ext\Formatter\PHPUnitResultFormatter</code> can be
                         specified.</p>
-
-                    <div class="table"><a name="idm46025656104416"></a><p class="formal-object-title"><span class="label">Table C.93: </span><span class="title">Attributes</span></p><div class="table-contents">
+                    <div class="table"><a name="idp15856"></a><p class="formal-object-title"><span class="label">Table C.91: </span><span class="title">Attributes</span></p><div class="table-contents">
                         
                         <table class="table" summary="Attributes" border="1"><colgroup><col class="name"><col class="type"><col class="description"><col class="default"><col class="required"></colgroup><thead><tr><th>Name</th><th>Type</th><th>Description</th><th>Default</th><th>Required</th></tr></thead><tbody><tr><td><code class="literal">type</code></td><td><code class="literal">String</code></td><td>Use a predefined formatter (either
                                         <code class="literal">xml</code>, <code class="literal">plain</code>,
-                                            <code class="literal">clover</code>,
-                                            <code class="literal">crap4j</code>, or
-                                        <code class="literal">summary</code>).</td><td>n/a</td><td rowspan="2">One of these is required.</td></tr><tr><td><code class="literal">classname</code></td><td><code class="literal">String</code></td><td>Name of a custom formatter class.</td><td>n/a</td></tr><tr><td><code class="literal">usefile</code></td><td><code class="literal">Boolean</code></td><td>Boolean that determines whether output should be sent to
+                                        <code class="literal">clover</code>, <code class="literal">clover-html</code>,
+                                        <code class="literal">crap4j</code>, or <code class="literal">summary</code>).
+                                    </td><td>n/a</td><td rowspan="2">One of these is required.</td></tr><tr><td><code class="literal">classname</code></td><td><code class="literal">String</code></td><td>Name of a custom formatter class.</td><td>n/a</td></tr><tr><td><code class="literal">usefile</code></td><td><code class="literal">Boolean</code></td><td>Boolean that determines whether output should be sent to
                                         a file.</td><td><code class="literal">true</code></td><td>No</td></tr><tr><td><code class="literal">todir</code></td><td><code class="literal">String</code></td><td>Directory to write the file to.</td><td>n/a</td><td>No</td></tr><tr><td><code class="literal">outfile</code></td><td><code class="literal">String</code></td><td>Filename of the result.</td><td>Depends on formatter</td><td>No</td></tr></tbody></table>
                     </div></div><br class="table-break">
                 </li><li class="listitem">
@@ -57,7 +61,7 @@
                         of nested &lt;fileset&gt;s. It then generates a lists of classes that are
                         (in)directly defined by each PHP file.</p>
 
-                    <div class="table"><a name="idm46025656071520"></a><p class="formal-object-title"><span class="label">Table C.94: </span><span class="title">Attributes</span></p><div class="table-contents">
+                    <div class="table"><a name="idp15923"></a><p class="formal-object-title"><span class="label">Table C.92: </span><span class="title">Attributes</span></p><div class="table-contents">
                         
                         <table class="table" summary="Attributes" border="1"><colgroup><col class="name"><col class="type"><col class="description"><col class="default"><col class="required"></colgroup><thead><tr><th>Name</th><th>Type</th><th>Description</th><th>Default</th><th>Required</th></tr></thead><tbody><tr><td><code class="literal">exclude</code></td><td><code class="literal">String</code></td><td>A list of classes to exclude from the pattern matching.
                                         For example, when you have two baseclasses
@@ -72,7 +76,7 @@
                     </div></div><br class="table-break">
                 </li></ul></div>
         </div>
-        <div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="idm46025656047328"></a>C.75.2 Example</h3></div></div></div>
+        <div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="idp15967"></a>C.68.2 Example</h3></div></div></div>
             
             <pre class="programlisting">&lt;phpunit&gt;
   &lt;formatter todir="reports" type="xml"/&gt;
@@ -113,10 +117,10 @@
                 reporting and counting, and could possibly lead to strange results. Instead, use one
                 of more fileset's to provide a list of testcases to execute.</p>
         </div>
-        <div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="idm46025656038208"></a>C.75.3 Supported Nested Tags</h3></div></div></div>
+        <div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="idp15982"></a>C.68.3 Supported Nested Tags</h3></div></div></div>
             
             <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
                     <p><code class="literal"><a class="link" href="FileSet.html" title="D.4 FileSet">fileset</a></code></p>
                 </li></ul></div>
         </div>
-    </div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="PhpLintTask.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="app.optionaltasks.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="PHPUnitReport.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">C.74 PhpLintTask </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> C.76 PHPUnitReport</td></tr></table></div></body></html>
+    </div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="PHPStanTask.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="app.optionaltasks.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="PHPUnitReport.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">C.67 PHPStanTask </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> C.69 PHPUnitReport</td></tr></table></div></body></html>
