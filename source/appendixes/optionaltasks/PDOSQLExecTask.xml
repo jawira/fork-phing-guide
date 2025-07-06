@@ -50,13 +50,6 @@
                         <entry>none</entry>
                         <entry>No</entry>
                     </row>
-                    <!--        <row>
-<entry><literal>encoding</literal></entry>
-          <entry><literal role="type">String</literal></entry>
-          <entry>The database encoding.</entry>
-          <entry>none</entry>
-          <entry>No</entry>
-        </row> -->
                     <row>
                         <entry><literal>src</literal></entry>
                         <entry>File</entry>
@@ -101,13 +94,6 @@
                         <entry>Whether to auto (implicitly) commit every single
                         statement, disabling transactions.</entry>
                         <entry><literal>false</literal></entry>
-                        <entry>No</entry>
-                    </row>
-                    <row>
-                        <entry><literal>encoding</literal></entry>
-                        <entry><literal role="type">String</literal></entry>
-                        <entry>Encoding to use for read SQL files</entry>
-                        <entry>none</entry>
                         <entry>No</entry>
                     </row>
                     <row>
